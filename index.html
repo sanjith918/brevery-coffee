@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Brevery Coffee</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<header>
+
+    <div class="logo">☕ Brevery Coffee</div>
+<div class="cart">🛒 <span id="cartCount">0</span></div>
+
+    <nav>
+        <ul id="navLinks">
+            <li><a href="#">Home</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+</section>
+<input type="text" id="searchInput" placeholder="Search coffee..." class="search-box">
+<button class="login-btn" onclick="openLogin()">Login</button>
+
+</header>
+<section class="hero">
+    <div class="hero-text">
+        <h1>Freshly Brewed Coffee</h1>
+        <p>Experience the rich aroma of premium beans crafted with passion.</p>
+        <button>Order Now</button>
+    </div>
+</section>
+
+    <h2 class="title">Our Menu</h2>
+
+<div class="menu-container">
+
+    <!-- Espresso -->
+    <div class="coffee-card">
+        <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348">
+        <div class="coffee-info">
+            <h3>Espresso</h3>
+            <p>Pure strong Italian coffee shot.</p>
+            <div class="coffee-bottom">
+                <span>₹149</span>
+                <button>Order</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cappuccino -->
+    <div class="coffee-card">
+        <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93">
+        <div class="coffee-info">
+            <h3>Cappuccino</h3>
+            <p>Rich espresso with creamy milk foam.</p>
+            <div class="coffee-bottom">
+                <span>₹199</span>
+                <button>Order</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Latte -->
+    <div class="coffee-card">
+        <img src="https://images.unsplash.com/photo-1494314671902-399b18174975">
+        <div class="coffee-info">
+            <h3>Latte</h3>
+            <p>Smooth blend of coffee and steamed milk.</p>
+            <div class="coffee-bottom">
+                <span>₹219</span>
+                <button>Order</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mocha -->
+    <div class="coffee-card">
+        <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735">
+        <div class="coffee-info">
+            <h3>Mocha</h3>
+            <p>Chocolate flavored creamy coffee.</p>
+            <div class="coffee-bottom">
+                <span>₹239</span>
+                <button>Order</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cold Brew -->
+    <div class="coffee-card">
+        <img src="https://images.unsplash.com/photo-1470337458703-46ad1756a187">
+        <div class="coffee-info">
+            <h3>Cold Brew</h3>
+            <p>Slow brewed chilled coffee.</p>
+            <div class="coffee-bottom">
+                <span>₹199</span>
+                <button>Order</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Iced Latte -->
+    <div class="coffee-card">
+        <img src="https://images.unsplash.com/photo-1517701604599-bb29b565090c">
+        <div class="coffee-info">
+            <h3>Iced Latte</h3>
+            <p>Refreshing cold milk coffee.</p>
+            <div class="coffee-bottom">
+                <span>₹229</span>
+                <button>Order</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Caramel Frappe -->
+    <div class="coffee-card">
+        <img src="https://images.unsplash.com/photo-1485808191679-5f86510681a2">
+        <div class="coffee-info">
+            <h3>Caramel Frappe</h3>
+            <p>Blended ice coffee with caramel.</p>
+            <div class="coffee-bottom">
+                <span>₹269</span>
+                <button>Order</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Chocolate Shake -->
+    <div class="coffee-card">
+        <img src="https://images.unsplash.com/photo-1572490122747-3968b75cc699">
+        <div class="coffee-info">
+            <h3>Chocolate Shake</h3>
+            <p>Thick creamy chocolate drink.</p>
+            <div class="coffee-bottom">
+                <span>₹249</span>
+                <button>Order</button>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+</div>
+
+    </div>
+</section>
+
+<section class="about" id="about">
+
+    <div class="about-image">
+        <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085">
+    </div>
+
+    <div class="about-text">
+        <h2>About Brevery Coffee</h2>
+        <p>
+            At Brevery Coffee we carefully select high-quality beans from
+            the world’s best farms. Every cup is freshly brewed to give you
+
+<section class="contact" id="contact">
+
+    <h2 class="contact-title">Contact Us</h2>
+
+    <form id="contactForm">
+        <input type="text" id="name" placeholder="Your Name" required>
+        <input type="email" id="email" placeholder="Your Email" required>
+        <textarea id="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+    </form>
+
+</section><!-- LOGIN MODAL -->
+<div class="login-modal" id="loginModal">
+
+    <div class="login-box">
+        <span class="close" onclick="closeLogin()">×</span>
+
+        <h2>Brevery Coffee</h2>
+        <p>Welcome Back</p>
+
+        <input type="email" placeholder="Email">
+        <input type="password" placeholder="Password">
+
+        <button class="login-submit">Login</button>
+
+        <p class="switch">Don't have an account? <span onclick="showSignup()">Sign Up</span></p>
+    </div>
+
+</div>
+
+
+<script src="script.js"></script>
+<footer class="footer">
+
+    <h2>Brevery Coffee</h2>
+    <p>Premium Coffee Experience</p>
+
+    <div class="socials">
+        <a href="#">Instagram</a>
+        <a href="#">Facebook</a>
+        <a href="#">Twitter</a>
+    </div>
+
+    <p class="copy">© 2026 Brevery Coffee. All Rights Reserved.</p>
+
+</footer>
+
+</body>
+
+    </div>
+</html>
